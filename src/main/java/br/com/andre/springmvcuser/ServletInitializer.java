@@ -1,4 +1,4 @@
-package br.com.test.testjsptomcat;
+package br.com.andre.springmvcuser;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
