@@ -18,6 +18,7 @@ Sistema de **busca e listagem de usuários** desenvolvido com Framework Java Spr
 5. Acesse o banco de dados através de um sistema de gerenciamento de banco de dados de sua preferencia(Mysql Workbench, por exemplo!) e execute o comando que esta no arquivo **src/main/resources/schema.sql**;
 6. No terminal, execute o comando `java -jar target/spring-mvc-user-0.0.1-SNAPSHOT.war`(Caso não tenha o arquivo .war com esse nome é só executar o unico .war dentro da pasta)
 7. Aguarde o sistema terminar de iniciar e acesse o endereço <a href="http://localhost:8080">http://localhost:8080</a> no seu navegador;
+8. Tela inicial:
 
 ![](http://ap.imagensbrasil.org/images/2018/12/12/tela-inicial.png)
 
@@ -26,7 +27,7 @@ Sistema de **busca e listagem de usuários** desenvolvido com Framework Java Spr
 
 O sistema possui estrutura baseado no padrão MVC.
 
-![ssas](http://ap.imagensbrasil.org/images/2018/12/12/estrutura-sistema.png)
+![](http://ap.imagensbrasil.org/images/2018/12/12/estrutura-sistema.png)
 
 - Controller: Package **controller**, onde ficam as classes de controller que são responsáveis por receber as requisições e retornar;
 - Model: Packages **service** e **mapper**, onde ficam as classes responsáveis por aplicar as regras de negócio;
@@ -45,9 +46,9 @@ O sistema usa o **MyBatis** para persistir os dados do banco de dados, as consul
 
 # To do's
 
-- [X] Telas de CRUD(cadastrar, editar, deletar)
-- [X] Login
-- [X] Logout
+- [ ] Telas de CRUD(cadastrar, editar, deletar)
+- [ ] Login
+- [ ] Logout
 
 # Pontos fortes do sistema
 - Basta executar o .war e a aplicação esta no ar;
