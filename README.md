@@ -25,7 +25,7 @@ Sistema de **busca e listagem de usuários** desenvolvido com Framework Java Spr
 # Estrutura do projeto
 ## MVC
 
-O sistema possui estrutura baseado no padrão MVC.
+O sistema possui estrutura baseada no padrão MVC.
 
 ![](http://ap.imagensbrasil.org/images/2018/12/12/estrutura-sistema.png)
 
