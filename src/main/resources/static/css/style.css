@@ -1,0 +1,11 @@
+table thead tr {
+	background-color: lightgray;
+}
+
+table thead tr td {
+	border: 1px solid black;
+}
+
+table tbody tr td {
+	border: 1px solid black;
+}

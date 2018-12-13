@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import br.com.andre.springmvcuser.service.UserService;
 
 @Controller
-public class HelloController {
+public class UserController {
 
 	@Autowired
 	private UserService userService;
@@ -19,10 +19,12 @@ public class HelloController {
 	public ModelAndView listUsers(@RequestParam(name="username",required=false) String username, 
 			@RequestParam(name="name",required=false) String name,
 			@RequestParam(name="email",required=false) String email) {
-		
+				
 	    ModelAndView map = new ModelAndView("users");
-	    map.addObject("userList", 
-	    		userService.findUsers(username, name, email));
+	    map.addObject("userList", userService.findUsers(username, name, email));
+	    map.addObject("username", username);
+	    map.addObject("name", name);
+	    map.addObject("email", email);
 
 	    return map;
 	}

@@ -1,22 +1,23 @@
 package br.com.andre.springmvcuser.mapper.sqlbuilder;
 
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.jdbc.SQL;
 
 public class UserSqlBuilder {
 
-	public static String buildFindByDynamicFilter(final String username, final String name, final String email) {
+	public static String buildFindByDynamicFilter(final @Param("username") String username, final @Param("name") String name, final @Param("email") String email) {
 		return new SQL() {
 			{
 				SELECT("*");
 				FROM("user");
-				if (name != null) {
-					OR().WHERE("name like #{name} || '%'");
+				if (name != null && !name.isEmpty()) {
+					OR().WHERE("name like '%' #{name} '%' ");
 				}
-				if (username != null) {
-					OR().WHERE("username like #{username}");
+				if (username != null && !username.isEmpty()) {
+					OR().WHERE("username like '%' #{username} '%'");
 				}
-				if (email != null) {
-					OR().WHERE("email like #{email} || '%'");
+				if (email != null && !email.isEmpty()) {
+					OR().WHERE("email like '%' #{email} '%'");
 				}
 			}
 		}.toString();

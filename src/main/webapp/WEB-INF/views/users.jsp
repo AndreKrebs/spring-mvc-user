@@ -15,16 +15,19 @@
 <title>Spring Boot</title>
 </head>
 <body>
-	<h1>Lista de Usuários!</h1>
-	<hr>
+	<h1>Lista de Usuários</h1>
+
+	<fieldset>
+    <legend>Filtro:</legend>
+		<form:form method="POST">
+			Login: <input type="text" name="username" value="${username}"/>
+			Nome: <input type="text" name="name" value="${name}"/>
+			E-mail: <input type="text" name="email" value="${email}"/> 
+			<button type="submit" >Filtrar</button>	
+		</form:form>
+	</fieldset>	
 	
-	<form:form method="POST">
-		Login: <input type="text" name="username"/>
-		Nome: <input type="text" name="name"/>
-		E-mail: <input type="text" name="email"/> 
-		<button type="submit" >Filtrar</button>	
-	</form:form>
-	<hr>
+	<br />
 	
 	<c:if test="${not empty userList}">
 		<table>
