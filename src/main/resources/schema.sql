@@ -13,6 +13,5 @@ CREATE TABLE `user_mvc`.`user` (
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC));
 
-INSERT INTO `user_mvc`.`user` (`username`, `password`, `is_enabled`, `register_date`, `name`, `surname`, `email`, `phone`) VALUES ('andre.krebs', '12345', '1', '2018-12-12', 'André', 'Silva', 'andre.krebssilva@gmail.com', '41-3423-5455');
-INSERT INTO `user_mvc`.`user` (`username`, `password`, `is_enabled`, `register_date`, `name`, `surname`, `email`, `phone`) VALUES ('suzana.prestes', '12345', '1', '2018-10-12', 'Suzana', 'Prestes', 'suh208@gmail.com', '41-4444-5455');
-  
+INSERT INTO `user_mvc`.`user` (`username`, `password`, `is_enabled`, `register_date`, `name`, `surname`, `email`, `phone`) VALUES ('andre.krebs', '12345', '1', '2018-12-12', 'André', 'Silva', 'andre@yahoo.com', '41-3423-5455');
+INSERT INTO `user_mvc`.`user` (`username`, `password`, `is_enabled`, `register_date`, `name`, `surname`, `email`, `phone`) VALUES ('suzana.prestes', '12345', '1', '2018-10-12', 'Suzana', 'Prestes', 'suz@yahoo.com', '41-4444-5455');
