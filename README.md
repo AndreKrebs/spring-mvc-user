@@ -14,7 +14,7 @@ Sistema de **busca e listagem de usuários** desenvolvido com Framework Java Spr
 1. Baixe ou clone o projeto na sua máquina local;
 2. Abra o terminal e acesse o diretório do projeto;
 3. Execute o comando `mvn clean package` para baixar as dependencias e gerar o arquivo **.war**;
-4. Inicie o container do banco de dados com o comando `docker-compose up src/main/docker/mysql/docker-compose.yml -d`
+4. Inicie o container do banco de dados com o comando `docker-compose -f src/main/docker/mysql/docker-compose.yml up -d`
 5. Acesse o banco de dados através de um sistema de gerenciamento de banco de dados de sua preferencia(Mysql Workbench, por exemplo!) e execute o comando que esta no arquivo **src/main/resources/schema.sql**;
 6. No terminal, execute o comando `java -jar target/spring-mvc-user-0.0.1-SNAPSHOT.war`(Caso não tenha o arquivo .war com esse nome é só executar o unico .war dentro da pasta)
 7. Aguarde o sistema terminar de iniciar e acesse o endereço <a href="http://localhost:8080">http://localhost:8080</a> no seu navegador;
